@@ -1,4 +1,6 @@
 # SmartContractBlockchain
+
+---------IN PROGRESS AS OF SEPT 2021--------
 Development of smart contract on ETH blockchain
 
 Instructional start to finish of ETH based blockchain smart contract build
