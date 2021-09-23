@@ -5,6 +5,25 @@
 
 Instructional start to finish of ETH based blockchain smart contract build
 
+###Terminology to know:
+- Node: examples of independent users -- aka a signle instance in a decentrilized system (aka one server running the technology or one peer group)
+- Consensus: the mechanism used to agree on the state of a blockchain. Consensus protocol can be broken down into 2 pieces. 
+    - a chain selection
+    - a sybil resistance - blockchain's ability to defend against users creating fake identities to prevent influence over said system. Ex preventing people from creating fake blockchains to get more and more rewards
+- Proof of Work (PoW): falls under umbrella of consensus. A sybil resistance mechanism cause it defines the way to figure out who is the block author. single node has to go through computational ecpensive process called mining to find the correct nonce or whatever the blockchain has in place. Some blockchains make the "riddle" intentionally hard or easy depending on the need to change the block time. Problems can chance depending on the system needs for the block time, Verifiable way to figure out who the block author is and be sybil resistant combined with chain selection rule. Also tells us where trnx fees and reward go to (has recently changed as of EIP 1559). In a PoW network called miners, in PoS they are validators. All nodes trying to get the answer first, if successful they will get the TRX fee and the block reward from the protocol or block reward.
+- 
+- Chain Selection rule: how do we know which blockchain is the real blockchain
+- Bitcoin and ETH use Nakamoto Consensus is a combo of PoW and longest chain rule. Decent network decides whichever network has longest chain or longest blocks on it is the one it will use. 
+- Block confirmations: number of additional blocks added on after our transaction went through in a block. Ex if we see confirmations 2, then the block our transaction was in has 2 blocks ahead of it in the longest chain
+- Proof of State (PoS): falls under umbrella of consensus
+- 
+- Bitcoin halving - referring to block reward being cut in half, reward cut in half every 4 years. Ex block rewards give out rewards on their specific protocol.
+- Gas fees paid by whoever runs the transaction
+- Sybil attack: when user creates a bunch of fake accounts to try to influence a network. On BTC and ETH really difficult. single node or entity looking to pretend to be multiple different people
+- 51% attack: 
+
+
+
 1 - download ETH wallet, I used metamask.io follow steps to store secure keys offline
 
 <b>NAvigate to https://faucet.rinkeby.io/ for requesting of rinkeby eth sent to private address for test funds</b>
