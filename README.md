@@ -1,6 +1,6 @@
 # SmartContractBlockchain
 
----------IN PROGRESS AS OF SEPT 2021--------
+---------WORK STILL IN PROGRESS--------
 
 
 Instructional start to finish of ETH based blockchain smart contract build
@@ -15,12 +15,26 @@ Instructional start to finish of ETH based blockchain smart contract build
 - Chain Selection rule: how do we know which blockchain is the real blockchain
 - Bitcoin and ETH use Nakamoto Consensus is a combo of PoW and longest chain rule. Decent network decides whichever network has longest chain or longest blocks on it is the one it will use. 
 - Block confirmations: number of additional blocks added on after our transaction went through in a block. Ex if we see confirmations 2, then the block our transaction was in has 2 blocks ahead of it in the longest chain
-- Proof of State (PoS): falls under umbrella of consensus
+- 
+- Proof of State (PoS): falls under umbrella of consensus. HAs pros and cons. Pros are that is a great sybil resistance mechanism, and great way to figure out who author of block should be. Another major pro is that it is WAY less computationally expensive to figure out the new block, since all nodes on network DO not need to do it, only one node needs to do it and rest of the nodes are just validators. CONs include being slightly less decentrilized network due to the upfront staking costs it costs to participate. General consensus still is that this is still very decentrilized and very secure. POS reduces environmental impact by 99% in the example of ETH2.
 - 
 - Bitcoin halving - referring to block reward being cut in half, reward cut in half every 4 years. Ex block rewards give out rewards on their specific protocol.
 - Gas fees paid by whoever runs the transaction
 - Sybil attack: when user creates a bunch of fake accounts to try to influence a network. On BTC and ETH really difficult. single node or entity looking to pretend to be multiple different people
-- 51% attack: 
+- 51% attack: become harder when the size of the blockchain is larger, refers to 51% of the blockchain miners or validators working in a dishonest way and influencing the protocol. More nodes in a blockchain - harder to attack
+- Validators: in POS nodes are randomly chosen to propose the new block in which validators verify the proposal or transaction is honest
+- Randow: being used in ETH2 implementation ewhich is a decentrilizaed autonomous org that collectively chooses the randomness then chooses which node is going to run next (this might change in the future)
+- Sharding: solution to the scaleability problem. Being implemented in ETH2, a sharded blockchain just means a "blockchain of blockchains". Main chain that coordinates everything amongst serveral chains that hook to the main chain. Sharding can greatly increase the number of transactions on a blockchain layer 1
+- Layer 1: Base layer blockchain implementation (examples include bitcoin, etherium, avalanche, etc.) the base layer blockchain solutions
+- Layer 2: anything application added on top of a layer 1 blockchain, a good example is chainlink, arbitram, optomizm. Arbitram and optomism are known as rollups because they rollup their transactions into a layer 1. 
+- Rollup is kind of like a sharded chain. They derive security from layer 1 and send their transactions to the layer 1. This is different from side chains. Rollups derive their security from their base layer 1 blockchains.
+
+- ETH and BTC are POW blockchains that follow nakimoto consensus
+- ETH 2.0 will be POS sharded blockchain
+- Sybil sttacks prevented by POW and POS
+- Sharding and rollups are solutions to scaleability solutions on layer 1s (not enough blockspace for the amount of transactions that want to get in them, resulting in high gas prices)
+- Gas prices: how much it costs to interact with the blockchain
+- 
 
 
 
